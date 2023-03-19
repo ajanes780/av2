@@ -7,23 +7,18 @@ import pose4 from "public/pose4.jpg";
 
 import {Button} from "@/app/components/button";
 import {H1, H2, H3} from "@/app/components/typography";
+import {ContactForm} from "@/app/components/contactForm";
 
 export default function Page() {
     return (
         <div className="flex flex-row w-screen h-full justify-center">
-            <div className='flex flex-col container items-center mx-auto px-4'>
-                <Image src={logoLight} alt='' style={{
-                    maxWidth: '80%',
-                    height: 'auto',
-                }}/>
+            <div className='flex flex-col container items-center mx-auto px-4 relative'>
+                <Image src={logoLight} alt="" className='w-full h-auto' />
                 <H1 className="text-center">Look Powerful, Move Powerfully</H1>
                 <Button className='w-100'>Get Started</Button>
 
-                <Image src={pose4} alt='' style={{
-                    maxWidth: '80%',
-                    height: 'auto',
-                }}/>
-                <H3>
+                <Image src={pose4} alt='' className='xs:w-screen'/>
+                <H3 >
                     Adrian is a personal trainer with over 20 years of experience. He
                     helps people who are fearful of previous injuries build a strong,
                     lean and resilient body Adrian’s unique skill set and approach to
@@ -35,10 +30,7 @@ export default function Page() {
                     such as cycling, hockey, equestrian and curling, as well as actors, actresses.
                 </H3>
 
-                <Image src={pose3} alt='' style={{
-                    maxWidth: '80%',
-                    height: 'auto',
-                }}/>
+                <Image src={pose3} alt='' className='xs:w-screen' />
                 <H3>
                     Adrian has appeared on CBC & CTV nationally as their on screen fitness expert. In 2007 Adrian was
                     the June cover model for Men’s Exercise magazine. In 2010 Adrian was a keynote speaker at the
@@ -57,10 +49,7 @@ export default function Page() {
                 <H2>
                     Where this started..
                 </H2>
-                <Image src={pose1} alt='' style={{
-                    maxWidth: '80%',
-                    height: 'auto',
-                }}/>
+                <Image src={pose1} alt='' className='xs:w-screen'/>
                 <H3>
                     I worked in a big box gym for over 15 years where I helped thousands of people achieve their
                     physique goals and recover from all types of injuries
@@ -71,10 +60,7 @@ export default function Page() {
                     what they had done before.
                 </H3>
 
-                <Image src={pose2} alt='' style={{
-                    maxWidth: '80%',
-                    height: 'auto',
-                }}/>
+                <Image src={pose2} alt='' className='xs:w-screen'/>
 
                 <H3>
                     Clients would be apprehensive about embarking on a personal training programme given their history
@@ -84,7 +70,7 @@ export default function Page() {
                 <H3>I bridge the gap between physical rehabilitation and personal training, helping clients get into
                     shape whilst addressing previous injuries and weaknesses
                 </H3>
-
+                <ContactForm/>
 
             </div>
         </div>

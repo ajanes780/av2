@@ -12,12 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className='bg-black'>
 
-        <header className='bg-white w-screen h-50'>
-          <Image src={logo} alt='logo' style={{
-            maxWidth: '30%',
-            height: 'auto',
-          }} />
-        </header>
+        {/*<header className='bg-white w-screen h-auto'>*/}
+        {/*  <Image src={logo} alt='logo' className=' w-full  max-w-md h-auto sm:hidden'/>*/}
+        {/*</header>*/}
         {children}
 
       </body>
