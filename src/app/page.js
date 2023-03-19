@@ -1,91 +1,92 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Image from "next/image";
+import logoLight from "public/Adrian-Veinot-light.png"
+import pose1 from "public/pose1.jpg";
+import pose2 from "public/pose2.jpg";
+import pose3 from "public/pose3.jpg";
+import pose4 from "public/pose4.jpg";
 
-const inter = Inter({ subsets: ['latin'] })
+import {Button} from "@/app/components/button";
+import {H1, H2, H3} from "@/app/components/typography";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+export default function Page() {
+    return (
+        <div className="flex flex-row w-screen h-full justify-center">
+            <div className='flex flex-col container items-center mx-auto px-4'>
+                <Image src={logoLight} alt='' style={{
+                    maxWidth: '80%',
+                    height: 'auto',
+                }}/>
+                <H1 className="text-center">Look Powerful, Move Powerfully</H1>
+                <Button className='w-100'>Get Started</Button>
+
+                <Image src={pose4} alt='' style={{
+                    maxWidth: '80%',
+                    height: 'auto',
+                }}/>
+                <H3>
+                    Adrian is a personal trainer with over 20 years of experience. He
+                    helps people who are fearful of previous injuries build a strong,
+                    lean and resilient body Adrian’s unique skill set and approach to
+                    personal training have made him one of the most sought after
+                    trainers in Canada.
+                </H3>
+                <H3>
+                    His client base doctors, business professionals, personal trainers, athletes in a range of sports
+                    such as cycling, hockey, equestrian and curling, as well as actors, actresses.
+                </H3>
+
+                <Image src={pose3} alt='' style={{
+                    maxWidth: '80%',
+                    height: 'auto',
+                }}/>
+                <H3>
+                    Adrian has appeared on CBC & CTV nationally as their on screen fitness expert. In 2007 Adrian was
+                    the June cover model for Men’s Exercise magazine. In 2010 Adrian was a keynote speaker at the
+                    Optimyz Live health & fitness expo. And in 2021 Adrian was CanFitPros fitness trendsetter blazing
+                    the online/remote personal training revolution keeping his clients and many people strong in mind
+                    and body throughout the pandemic.
+                </H3>
+                <H3>
+                    All my clients have one thing in common – they drastically underestimate what their body is capable
+                    of. I am here to help my clients not only reclaim their health, but give them confidence in what
+                    their body can do and in the way it can look!” Now is the time to address injuries or aches and
+                    pains, reclaim your health, and get into shape. The longer you leave it, the harder it will become.
+                    And it will never be easier than right now. So lets get you started…
+                </H3>
+
+                <H2>
+                    Where this started..
+                </H2>
+                <Image src={pose1} alt='' style={{
+                    maxWidth: '80%',
+                    height: 'auto',
+                }}/>
+                <H3>
+                    I worked in a big box gym for over 15 years where I helped thousands of people achieve their
+                    physique goals and recover from all types of injuries
+                </H3>
+                <H3>
+                    I grew frustrated that there was no clear guidance or help for people who not only wanted to recover
+                    from injury, but wanted to continue to get stronger, leaner and fitter and push their bodies beyond
+                    what they had done before.
+                </H3>
+
+                <Image src={pose2} alt='' style={{
+                    maxWidth: '80%',
+                    height: 'auto',
+                }}/>
+
+                <H3>
+                    Clients would be apprehensive about embarking on a personal training programme given their history
+                    of injury or lack of activity, and I felt that most trainers lacked the experience or education
+                    required to help.
+                </H3>
+                <H3>I bridge the gap between physical rehabilitation and personal training, helping clients get into
+                    shape whilst addressing previous injuries and weaknesses
+                </H3>
+
+
+            </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    )
 }
