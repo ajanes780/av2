@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+/*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap');
 
 @tailwind base;
