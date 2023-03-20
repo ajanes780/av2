@@ -23,6 +23,7 @@ export default function Page() {
           playsInline
           autoPlay
           controls
+          loop
           preload='auto'
           poster='./public/hustle.jpg'
           className='xs:w-screen h-auto'
