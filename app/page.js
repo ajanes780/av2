@@ -18,7 +18,15 @@ export default function Page() {
         <Button className='w-100'>Get Started</Button>
 
         <Image src={pose4} alt='' className='xs:w-screen' />
-        <video autoPlay muted poster='./public/hustle.jpg' className='xs:w-screen h-auto'>
+        <video
+          muted
+          playsInline
+          autoPlay
+          controls
+          preload='auto'
+          poster='./public/hustle.jpg'
+          className='xs:w-screen h-auto'
+        >
           <source src='https://du4j5z4bw91rt.cloudfront.net/hustle.mp4' type='video/mp4' />
           Your browser does not support the html video tag.
         </video>
