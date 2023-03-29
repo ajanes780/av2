@@ -9,6 +9,35 @@
 
 @layer base {
     html {
-        font-family: Inter, Exo, system-ui, sans-serif;
+    font-family: Inter, Exo, system-ui, sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    }
+    body{
+       overflow-x: hidden;
     }
 }
+
+
+/*html{*/
+/*    font-family: Inter, Exo, system-ui, sans-serif;*/
+/*    overflow-y: scroll;*/
+/*    overflow-x: hidden;*/
+/*}*/
+
+/*.parent {*/
+/*    width: 400vw;*/
+/*    height: 100vh;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+
+/*}*/
+
+/*.child {*/
+/*    width: 100vw;*/
+/*    height: 100%;*/
+
+/*}*/
